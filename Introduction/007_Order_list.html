@@ -3,24 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Списочные элементы</title>
 </head>
 <body>
-	<ol>
+	<!-- Атрибут start устанавливает номер, с которого будет начинаться список "Упорядочивание" через start работает во всех браузерах. -->
+	<ol start="3">
 		<li>HTML and CSS</li>
 		<li>Javascript</li>
 		<li>jQuery</li>
-	</ol reversed>
-	<ol>
+	</ol>
+
+	<!-- Атрибут reversed применяется для управления нумерацией упорядоченных списков и отображает список в обратном порядке. -->
+	<ol reversed>
+		<!-- Не работает в IE -->
 		<li>HTML and CSS</li>
 		<li>Javascript</li>
 		<li>jQuery</li>
 	</ol>
 	<ul reversed>
+		<!-- Не работает в IE -->
 		<li>HTML and CSS</li>
 		<li>Javascript</li>
 		<li>jQuery</li>
 	</ul>
+
+	<!-- Все современные браузеры поддерживают для li атрибут value. -->
 	<ol>
 		Результаты голосования на самую популярную веб-технологию. Первое место разделили Javascript и HTML and CSS.
 		<li value="1">HTML and CSS</li>
