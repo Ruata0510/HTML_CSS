@@ -43,15 +43,6 @@
 		</tr>
 		<tr>
 			<td>
-				точность
-			</td>
-			<td>
-				<p id="altitudeAccuracy">					
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
 				курс
 			</td>
 			<td>
@@ -81,13 +72,13 @@
 			var $ = function (selector) {
 				return document.getElementById(selector);
 			}
-			$("latitude").innerHTNL = position.coords.latitude;
-			$("longitude").innerHTNL = position.coords.longitude;
-			$("accuracy").innerHTNL = position.coords.accuracy;
-			$("altitude").innerHTNL = position.coords.altitude;
-			$("altitudeAccuracy").innerHTNL = position.coords.altitudeAccuracy;
-			$("heading").innerHTNL = position.coords.heading;
-			$("speed").innerHTNL = position.coords.speed;
+			$("latitude").innerHTML = position.coords.latitude;
+			$("longitude").innerHTML = position.coords.longitude;
+			$("accuracy").innerHTML = position.coords.accuracy;
+			$("altitude").innerHTML = position.coords.altitude;
+			$("altitudeAccuracy").innerHTML = position.coords.altitudeAccuracy;
+			$("heading").innerHTML = position.coords.heading;
+			$("speed").innerHTML = position.coords.speed;
 		}
 
 		function handleError(error) {
@@ -108,7 +99,7 @@
 		}
 
 		function updateStatus(message) {
-			document.getElementById("status").innerHTNL = message;
+			document.getElementById("status").innerHTML = message;
 		}
 	</script> 
 </body>
