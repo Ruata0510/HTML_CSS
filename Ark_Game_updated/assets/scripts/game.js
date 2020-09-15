@@ -114,7 +114,7 @@ let game = {
         ++this.score;
 
         if (this.score >= this.blocks.length) {
-            this.end("Win")
+            this.end("ПОБЕДА!")
         }
     },
     collideBlocks() {

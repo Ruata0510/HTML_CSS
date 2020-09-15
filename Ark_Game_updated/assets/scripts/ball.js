@@ -66,7 +66,7 @@ game.ball = {
             this.dy = this.velocity;
             game.sounds.bump.play();
         } else if (ballBottom > worldBottom) {
-            game.end("Loss");
+            game.end("НАЧИНАЙ ЗАНОВО!");
         }
     },
     bumpBlock(block) {
