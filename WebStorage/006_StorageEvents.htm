@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Уведомления об обновлениях Web Storage</title>
+	<script type="text/javascript">
+		
+		//Событие stronge происходит при внесении изменений в localStronge (при добавлении, удалении или изменении значений).
+		// Для того, чтобы увидеть роботу этого примера, откройте в браузере две вкладки.
+		// В первой вносите изменения в localStronge, ф на второй вкладке отслеживайте изменения.
+		window.addEventListener("storage", displayEvent, true);
+		window.addEventListener("load", init, false);
+
+		function init() {
+			var key = document.getElementById("keyInput");
+			var val = document.getElementById("valueInput");
+
+			document.getElementById("btnSave").onclick = function () {
+				window.localStronge.setItem(key.value, val.value);
+			}
+
+			document.getElementById("btnRemove").onclick = function () {
+				window.localStronge.removeItem(key.value);
+			}
+
+			document.getElementById("btnGet").onclick = function () {
+				alert(window.localStronge.setItem(key.value, val.value));
+			}
+		}
+		function displayEvent(e) {
+			var d = document.getElementById("output");
+			var massage = "key: " + e.key + "<br />";         // изменённый ключ
+			massage += "newValue: " + e.newValue + "<br />";   // новое значение ключа
+			massage += "oldValue: " + e.oldValue + "<br />";    // старое значение ключа
+			massage += "url: " + e.url + "<br />";    // адрес страницы на которой произошли изменения 
+			massage += "storageArea: " + e.storageArea + "<br />";   // ссылка на объект хранилища
+			d.innerHTML = massage;
+		}
+	</script>
+</head>
+<body>
+	Ключ <input id="keyInput" />
+	Значение <input id="valueInput" />
+	<br />
+	<button id="btnSave">Сохранить</button>
+	<button id="btnGet">Прочитать</button>
+	<button id="btnRemove">Удалить по ключу</button>
+	<div id="output">
+	</div>
+</body>
+</html>
