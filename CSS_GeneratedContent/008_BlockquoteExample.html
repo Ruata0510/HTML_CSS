@@ -20,7 +20,7 @@
 			position: relative;
 			bottom: -25px;
 		
-		background: url(red.png) -3px -3px #ddd;
+		background: url(quotationmark.png) -3px -3px #ddd;
 		border-radius: 25px;
 		display: block;
 		height: 25px;
@@ -32,32 +32,32 @@
 		-o-transition: background-color 350ms;
 		-webkit-transition: background-color 350ms;
 		transition: background-color 350ms;
-	}
+		}
 
-	blockquote:after {
-		content: " ";
-		float: right;
-		position: relative;
-		top: -25px;
+		blockquote:after {
+			content: " ";
+			float: right;
+			position: relative;
+			top: -25px;
 
-		border-radius: 25px;
-		background:  url(red.png) -1px -32px #ddd;
-		display: block;
-		height: 25px;
-		width: 25px;
+			border-radius: 25px;
+			background:  url(quotationmark.png) -1px -32px #ddd;
+			display: block;
+			height: 25px;
+			width: 25px;
 
-		/* устанавливаем что при смене значения свойства background-color втечении 350 ms должен произойти плавный переход значения
-		от текущего к изменённому*/
-		-moz-transition: background-color 350ms;		
-		-o-transition: background-color 350ms;
-		-webkit-transition: background-color 350ms;
-		transition: background-color 350ms;
-	}
+			/* устанавливаем что при смене значения свойства background-color втечении 350 ms должен произойти плавный переход значения
+			от текущего к изменённому*/
+			-moz-transition: background-color 350ms;		
+			-o-transition: background-color 350ms;
+			-webkit-transition: background-color 350ms;
+			transition: background-color 350ms;
+		}
 
-	blockquote:hover:after, blockquote:hover:after, {
-		/* запуск анимации */
-		background-color: #555;
-	}
+		blockquote:hover:after, blockquote:hover:after, {
+			/* запуск анимации */
+			background-color: #555;
+		}
 	</style>
 </head>
 <body>
