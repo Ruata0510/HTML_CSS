@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Контакты</title>
+	<title>Фильм Безумный Макс</title>
 	<meta name="description" content="Кинобаза - это портал о кино" />
 	<meta name="keywords" content="фильмы, фильмы онлайн, hd" />
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -20,10 +20,10 @@
 			<div class="menubar">
 				<ul class="menu">
 					<li><a href="index.html">Главная</a></li>
-					<li><a href="films.html">Фильмы</a></li>
+					<li class="selected"><a href="films.html">Фильмы</a></li>
 					<li><a href="#">Сериалы</a></li>
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li class="selected"><a href="contact.html">Контакты</a></li>
+					<li><a href="contact.html">Контакты</a></li>
 				</ul>
 			</div>
 		</div>
@@ -68,12 +68,47 @@
 			</div>
 
 			<div class="content">
-				<h1>Контакты</h1>
-				<p>Отправьте ваш отзыв о портале КиноБаза</p>
-				<div class="send send_contact">
-					<form method="post" action="#" id="contact">
+				<h1>Безумный Макс</h1>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/watch?v=yuJf6E_Gq5c" frameborder="0" allowfullscreen></iframe>
+
+				<div class="info_film_page">
+					<span class="label">рейтинг: </span><span class="value">7.5 / 10</span>
+					<span class="label">год: </span><span class="value">2015</span>
+					<span class="label">режиссёр: </span><span class="value">Джордж Миллер</span>
+				</div>
+				<hr>
+				<h2>Описание: Безумный Макс</h2>
+				<div class="descriptions_film">
+					<img src="assets/img/max.png">
+						Макс скитается по выжженной планете в полном одиночестве, ведь, по его мнению, это единственный способ выжить. Однако это не спасает главного героя от налетчиков из Цитадели, и после недолгой погони Макс попадает в плен, где становится донором крови для одного из приспешников тирана по имени Несмертный Джо.
+						Цитадель стоит на огромных запасах воды, и это дает Несмертному Джо власть над окружающими. Однажды один из полевых командиров – девушка Фуриоса, сбегает от своего хозяина на огромном бронированном грузовике, и ко всему прочему успевает прихватить с собой часть гарема диктатора.
+				</div>
+
+				<hr>
+				<h2>Отзывы:</h2>
+
+				<div class="reviews">
+					<div class="review_name">
+						Сергей
+					</div>
+					<div class="review_text">
+						Отличный фильм, 3 часа пролетели не заметно.
+					</div>
+				</div>
+
+				<div class="reviews">
+					<div class="review_name">
+						Дмитрий
+					</div>
+					<div class="review_text">
+						После фильма Начало, я с нетерпением ждал ещё работ от Кристофера Нолана. Интерстеллар меня впечатлил.
+					</div>
+				</div>
+
+				<div class="send">
+					<form method="post" action="#" id="review">
 						<input type="text" name="review_name" placeholder="ваше имя">
-						<input type="text" name="review_email" placeholder="ваш email">
 						<textarea name="review_text"></textarea>
 						<input class="btn" type="submit" value="отправить">
 					</form>
