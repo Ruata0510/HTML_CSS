@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фильмы</title>
+	<meta name="description" content="Кинобаза - это портал о кино" />
+	<meta name="keywords" content="фильмы, фильмы онлайн, hd" />
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="main">
+
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">КиноБаза</a></h1>
+					<h2>Кино - наша страсть!</h2>
+				</div>
+			</div>
+
+			<div class="menubar">
+
+				<ul class="menu">
+					<li><a href="index.html">Главная</a></li>
+					<li class="selected"><a href="films.html">Фильмы</a></li>
+					<li><a href="#">Сериалы</a></li>
+					<li><a href="rating.html">Рейтинг фильмов</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="site_content">
+
+			<div class="sidebar_container">
+
+				<div class="sidebar">
+					<h2>Поиск</h2>
+					<form method="post" action="#" id="search_form" >
+						<input type="search" name="search_field" placeholder="ваш запрос" />
+						<input type="submit" class="btn" value="найти" />
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>Вход</h2>
+					<form method="post" action="#" id=login>
+
+						<input type="text" name="login_field" placeholder="логин" />
+						<input type="password" name="password_field" placeholder="пароль" />
+						<input type="submit" class="btn" value="вход" />
+						<div class="lables_passreg_text">
+							<span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>Новости</h2>
+					<span>31.02.2018</span>
+					<p>Мы запустили расширенный поиск</p>
+					<a href="#">читать</a>
+				</div>
+
+				<div class="sidebar">
+					<h2>Рейтинг фильмов</h2>
+						<ul>
+						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
+						<li><a href="#">Матрица</a><span class="rating_sidebar">8.0</span></li>
+						<li><a href="#">Безумный Макс</a><span class="rating_sidebar">7.5</span></li>
+						<li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="content">
+
+				<div class="info_film">
+					<img src="assets/img/inter.png">
+					Купер – главный герой фильма «Интестеллар». Однажды этому физику удалось обнаружить чёрную дыру. Сквозь эту червоточину астронавты хотят проделать путь в другую часть галактики. Сюжет картины основан на теориях учённого Альберта Эйнштейна. В частности, речь идёт о «кротовьих норах». Учёный утверждал, что долгие дистанции можно преодолевать мгновенно. Проблема заключается в том, что исследователь никогда не знает, что его ждёт на другом конце. Но герои фильма не побоялись этого и отправились в далёкое путешествие.
+					<div class="button"><a href="show.html">Смотреть</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="assets/img/max.png">
+					Макс скитается по выжженной планете в полном одиночестве, ведь, по его мнению, это единственный способ выжить. Однако это не спасает главного героя от налетчиков из Цитадели, и после недолгой погони Макс попадает в плен, где становится донором крови для одного из приспешников тирана по имени Несмертный Джо.
+					Цитадель стоит на огромных запасах воды, и это дает Несмертному Джо власть над окружающими. Однажды один из полевых командиров – девушка Фуриоса, сбегает от своего хозяина на огромном бронированном грузовике, и ко всему прочему успевает прихватить с собой часть гарема диктатора.
+					<div class="button"><a href="#">Смотреть</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="assets/img/matrix.png">
+					Действия картины разворачиваются в будущем. В центре сюжета молодой парень по имени Томас Андерсон, ведущий двойной образ жизни. Днем он самый обычный сотрудник крупной компании, а вот по ночам хакер Нео. Однажды на его компьютер от неизвестных людей приходит сообщение странного содержания «Ты увяз в матрице». Парень даже представить себе не может, что это все это значит, но в скором времени в его жизни начинают происходить события, благодаря которым он получит ответы на все его вопросы...
+					<div class="button"><a href="#">Смотреть</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="assets/img/cloud.png">
+					Казалось бы, как связаны между собой простой пастух из 19 века, американский юрист, не побоявшийся вступиться за темнокожего раба, талантливый молодой композитор, решивший отступить от своих жизненных принципов, девушка-репортер, желающая во что бы то ни стало докопаться до правды не взирая на грозящую ей опасность, издатель, имеющий проблемы с криминальной группировкой, юная девушка клон по имени Сонми, судьба которой должна закончиться очень скоро, а также житель будущего Захри. Но очень скоро зритель поймет - это не просто истории жизни, это одна цельная цепочка предопределенных событий, без которой не произошли бы ключевые изменения.
+					<div class="button"><a href="#">Смотреть</a></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	<div class="footer">
+		<p>
+			<a href="index.html">Главная</a> |
+			<a href="films.html">Фильмы</a> |
+			<a href="#">Сериалы</a> |
+			<a href="rating.html">Рейтинг фильмов</a> |
+			<a href="contact.html">Контакты</a>
+		</p>
+		<p>kinopoisk.ru</p>
+	</div>
+
+	</div>
+
+</body>
+</html>
