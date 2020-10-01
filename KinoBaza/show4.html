@@ -6,10 +6,11 @@
 	<meta name="description" content="Кинобаза - это портал о кино" />
 	<meta name="keywords" content="фильмы, фильмы онлайн, hd" />
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" href="assets/img/images.png" type="image/x-icon" />
 </head>
 <body>
-	<div class="main">
-		<div class="header">
+	<main>
+		<header>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="index.html">КиноБаза</a></h1>
@@ -17,7 +18,7 @@
 				</div>
 			</div>
 
-			<div class="menubar">
+			<nav class="menubar">
 				<ul class="menu">
 					<li><a href="index.html">Главная</a></li>
 					<li class="selected"><a href="films.html">Фильмы</a></li>
@@ -25,11 +26,11 @@
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
 					<li><a href="contact.html">Контакты</a></li>
 				</ul>
-			</div>
-		</div>
+			</nav>
+		</header>
 
 		<div class="site_content">
-			<div class="sidebar_container">
+			<aside class="sidebar_container">
 				<div class="sidebar">
 					<h2>Поиск</h2>
 					<form method="post" action="#" id="search_form" >
@@ -65,9 +66,9 @@
 						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
 				</div>
-			</div>
+			</aside>
 
-			<div class="content">
+			<content>
 				<h1>Облачный атлас</h1>
 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/K2VtiZSvwuo" frameborder="0" allowfullscreen></iframe>
@@ -79,10 +80,10 @@
 				</div>
 				<hr>
 				<h2>Описание: Облачный атлас</h2>
-				<div class="descriptions_film">
+				<article class="descriptions_film">
 					<img src="assets/img/cloud.png">
 						Казалось бы, как связаны между собой простой пастух из 19 века, американский юрист, не побоявшийся вступиться за темнокожего раба, талантливый молодой композитор, решивший отступить от своих жизненных принципов, девушка-репортер, желающая во что бы то ни стало докопаться до правды не взирая на грозящую ей опасность, издатель, имеющий проблемы с криминальной группировкой, юная девушка клон по имени Сонми, судьба которой должна закончиться очень скоро, а также житель будущего Захри. Но очень скоро зритель поймет - это не просто истории жизни, это одна цельная цепочка предопределенных событий, без которой не произошли бы ключевые изменения.
-				</div>
+				</article>
 
 				<hr>
 				<h2>Отзывы:</h2>
@@ -112,20 +113,20 @@
 						<input class="btn" type="submit" value="отправить">
 					</form>
 				</div>
-			</div>
+			</content>
 		</div>
 
-		<div class="footer">
-			<p>
+		<footer>
+			<nav>
 				<a href="index.html">Главная</a> |
 				<a href="films.html">Фильмы</a> |
 				<a href="#">Сериалы</a> |
 				<a href="rating.html">Рейтинг фильмов</a> |
 				<a href="contact.html">Контакты</a>
-			</p>
+			</nav>
 			<p>kinopoisk.ru</p>
-		</div>
-	</div>
+		</footer>
+	</main>
 
 </body>
 </html>

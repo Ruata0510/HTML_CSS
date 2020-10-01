@@ -6,10 +6,11 @@
 	<meta name="description" content="Кинобаза - это портал о кино" />
 	<meta name="keywords" content="фильмы, фильмы онлайн, hd" />
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" href="assets/img/images.png" type="image/x-icon" />
 </head>
 <body>
-	<div class="main">
-		<div class="header">
+	<main>
+		<header>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="index.html">КиноБаза</a></h1>
@@ -17,7 +18,7 @@
 				</div>
 			</div>
 
-			<div class="menubar">
+			<nav class="menubar">
 				<ul class="menu">
 					<li><a href="index.html">Главная</a></li>
 					<li class="selected"><a href="films.html">Фильмы</a></li>
@@ -25,11 +26,11 @@
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
 					<li><a href="contact.html">Контакты</a></li>
 				</ul>
-			</div>
-		</div>
+			</nav>
+		</header>
 
 		<div class="site_content">
-			<div class="sidebar_container">
+			<aside class="sidebar_container">
 				<div class="sidebar">
 					<h2>Поиск</h2>
 					<form method="post" action="#" id="search_form" >
@@ -65,9 +66,9 @@
 						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
 				</div>
-			</div>
+			</aside>
 
-			<div class="content">
+			<content>
 				<h1>Безумный Макс</h1>
 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/yuJf6E_Gq5c" frameborder="0" allowfullscreen></iframe>
@@ -79,11 +80,11 @@
 				</div>
 				<hr>
 				<h2>Описание: Безумный Макс</h2>
-				<div class="descriptions_film">
+				<article class="descriptions_film">
 					<img src="assets/img/max.png">
 						Макс скитается по выжженной планете в полном одиночестве, ведь, по его мнению, это единственный способ выжить. Однако это не спасает главного героя от налетчиков из Цитадели, и после недолгой погони Макс попадает в плен, где становится донором крови для одного из приспешников тирана по имени Несмертный Джо.
 						Цитадель стоит на огромных запасах воды, и это дает Несмертному Джо власть над окружающими. Однажды один из полевых командиров – девушка Фуриоса, сбегает от своего хозяина на огромном бронированном грузовике, и ко всему прочему успевает прихватить с собой часть гарема диктатора.
-				</div>
+				</article>
 
 				<hr>
 				<h2>Отзывы:</h2>
@@ -113,20 +114,20 @@
 						<input class="btn" type="submit" value="отправить">
 					</form>
 				</div>
-			</div>
+			</content>
 		</div>
 
-		<div class="footer">
-			<p>
+		<footer>
+			<nav>
 				<a href="index.html">Главная</a> |
 				<a href="films.html">Фильмы</a> |
 				<a href="#">Сериалы</a> |
 				<a href="rating.html">Рейтинг фильмов</a> |
 				<a href="contact.html">Контакты</a>
-			</p>
+			</nav>
 			<p>kinopoisk.ru</p>
-		</div>
-	</div>
+		</footer>
+	</main>
 
 </body>
 </html>
