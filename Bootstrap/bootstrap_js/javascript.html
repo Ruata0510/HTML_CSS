@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Bootstrap 4</title>
+</head>
+<body>
+	 <h3>Валидация формы</h3>
+	 <div class="container">
+	 	<div class="row">
+	 		<div class="col-12">
+	 			<form class="myForm" novalidate>
+	 				<div class="form-group row">
+	 					<label class="col-3" for="exampleInputEmail1">Email adress</label>
+	 					<input type="email" class="form-control col-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email adress" required>
+	 					<div class="valid-feedback">
+	 						vveli verno
+	 					</div>
+	 					<div class="invalid-feedback">
+	 						oshibka
+	 					</div>
+	 				</div>
+	 				<div class="form-group row">
+	 					<label class="col-3" for="exampleInputPassword1">password</label>
+	 					<input type="password" class="form-control col-9" id="exampleInputPassword1" placeholder="password" required>
+	 					<div class="invalid-feedback">
+	 						oshibka
+	 					</div>
+	 					<div class="valid-feedback">
+	 						vveli verno
+	 					</div>
+	 				</div>
+	 				<div class="form-group">
+	 					<label for="exampleFormControlSelect1">Example select</label>
+	 					<select class="form-control" id="exampleFormControlSelect1" required>
+	 						<option>1</option>
+	 						<option>2</option>
+	 						<option>3</option>
+	 						<option>4</option>
+	 						<option>5</option>
+	 					</select>
+	 				</div>
+	 				<div class="form-row">
+	 					<div class="custom-control custom-ckeckbox">
+	 						<input type="checkbox" class="custom-control-input" required id="custom1">
+	 						<label for="custom1" class="custom-control-label">Viberite menja</label>
+	 						<div class="invalid-tooltip">eto objazatelno vibrat</div>
+	 					</div>
+	 					<div class="custom-control custom-radio">
+	 						<input type="radio" name="customform" class="custom-control-input" required id="custom2">
+	 						<label for="custom2" class="custom-control-label">Viberite menja</label>
+	 						<div class="invalid-tooltip">eto objazatelno vibrat</div>
+	 					</div>
+	 					<div class="custom-control custom-radio">
+	 						<input type="radio" name="customform" class="custom-control-input" required id="custom3">
+	 						<label for="custom3" class="custom-control-label">Viberite menja</label>
+	 						<div class="invalid-tooltip">eto objazatelno vibrat</div>
+	 					</div>
+	 				</div>
+	 				<button type="submit" class="btn btn-primary">Submit</button>
+	 			</form>
+	 		</div>
+	 	</div>
+	 </div>
+
+		<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
