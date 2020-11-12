@@ -10,8 +10,8 @@
 	<title>Bootstrap 4</title>
 </head>
 <body>
-	 <h3>Валидация формы</h3>
-	 <div class="container">
+	<h3>Валидация формы</h3>
+	<div class="container">
 	 	<div class="row">
 	 		<div class="col-12">
 	 			<form class="myForm" novalidate>
@@ -66,10 +66,10 @@
 	 			</form>
 	 		</div>
 	 	</div>
-	 </div>
+	</div>
 
-	 <h3>Карусель</h3>
-	 <div class="container">
+	<h3>Карусель</h3>
+	<div class="container">
 	 	<div class="row">
 	 		<div class="col-7">
 	 			<div id="carouselMy" class="carousel my-carousel slide" data-ride="carousel">
@@ -110,10 +110,10 @@
 	 			</div>
 	 		</div>
 	 	</div>
-	 </div>
+	</div>
 
-	 <h3>Коллапс</h3>
-	 <div class="container">
+	<h3>Коллапс</h3>
+	<div class="container">
 	 	<div class="row">
 	 		<div class="col-12">
 	 			<p>
@@ -135,10 +135,10 @@
 	 			</div>
 	 		</div>
 	 	</div>
-	 </div>
+	</div>
 
-	 <h3>Акордеон</h3>
-	 <div class="container">
+	<h3>Акордеон</h3>
+	<div class="container">
 	 	<div class="row">
 	 		<div class="col-12">
 	 			<div id="accordion">
@@ -182,7 +182,82 @@
 	 			</div>
 	 		</div>
 	 	</div>
-	 </div>
+	</div>
+
+	<h3>Лист групп</h3>
+	<div class="container">
+		<div class="row">
+			<div class="row">
+				<div class="col-4">
+					<div class="list-group" id="list-tab" role="tablist">
+						<a class="list-group-item list-group-item-success active" id="list-home-list" data-toggle="list" href="#list-home">
+							Home
+							<span class="badge badge-primary">25</span>
+						</a>
+						<a class="list-group-item list-group-item-success" id="list-profile-list" data-toggle="list" href="#list-profile">
+							Profile
+							<span class="badge badge-primary">25</span>
+						</a>
+						<a class="list-group-item list-group-item-success" id="list-messages-list" data-toggle="list" href="#list-messages">
+							Messages
+							<span class="badge badge-primary">25</span>
+						</a>
+						<a class="list-group-item list-group-item-success" id="list-settings-list" data-toggle="list" href="#list-settings">
+							Settings
+							<span class="badge badge-primary">25</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-8">
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="list-home" aria-labelledby="list-home-list">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo iusto suscipit quos eveniet magnam sit.
+						</div>
+						<div class="tab-pane fade" id="list-profile" aria-labelledby="list-profile-list">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo iusto suscipit quos eveniet magnam sit.
+						</div>
+						<div class="tab-pane fade" id="list-messages" aria-labelledby="list-messages-list">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo iusto suscipit quos eveniet magnam sit.
+						</div>
+						<div class="tab-pane fade" id="list-settings" aria-labelledby="list-settings-list">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo iusto suscipit quos eveniet magnam sit.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+
+	<h3>Модальное окно</h3>
+	<div class="container">
+		<div class="row">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+				Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="Modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Произвольное окно</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="&times;"></span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt et corporis, ut a molestiae placeat magni, voluptatum pariatur molestias.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 		<!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
